@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Checker</title>
+    <style>
+        #main_id{
+            width: 100%; 
+            max-width: 1200px; 
+            margin: 0 auto;
+        }
+        #main_id div{
+            padding: 20px;
+        }
+        #main_textarea{
+            font-size: 15px;
+            height: 300px; 
+            width: 100%;
+            border: 2px solid #0275d8;
+            border-radius: 5px;
+        }
+        #main_button{
+            margin-top: 5px;
+            font-size: 20px;
+            border-radius: 5px;
+            border: none; 
+            padding: 10px 30px; 
+            font-weight: 700; 
+            color: white; 
+            background: #0275d8;
+            cursor: pointer;
+            transition: .5s;
+        }
+        #main_button:hover{
+            background: rgb(17, 103, 184);
+        }
+        #main_ul li{
+            color: rgb(230, 33, 33);
+            font-size: 20px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <main id="main_id">
+        <div> 
+            <textarea name="" id="main_textarea" placeholder="Enter Your Email or Email Subject...." 
+            ></textarea>
+            <ul id="main_ul">
+
+            </ul>
+            <button 
+            onclick="main_button_click()"
+            id="main_button"
+            >Submit</button>
+        </div>
+        
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
